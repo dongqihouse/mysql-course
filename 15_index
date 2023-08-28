@@ -1,0 +1,29 @@
+# 索引
+
+## 创建索引
+```sql
+
+create [unque|fulltext|spatial] index index_name on table_name (col_name ...)
+```
+
+## 查看索引
+```sql
+
+show index from table_name
+```
+
+## 删除索引
+
+```sql
+
+DROP index email_index on player;
+```
+
+
+## 使用Alter创建索引
+
+```sql
+
+ALTER table player add index email_index (email);
+```
+
